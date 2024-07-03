@@ -203,6 +203,7 @@ img {
   align-items: center;
   width: 90%;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 /* HEADER */
