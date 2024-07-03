@@ -312,12 +312,20 @@
         </div>
       </div>
       <nav class="nav">
-        <img
-          src="img/logo.png"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-        />
+        <div class="mobile_nav_container">
+          <img
+            src="img/logo.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+          />
+          <div class="nav__toggle" aria-label="Toggle navigation">
+            <svg>
+              <use xlink:href="img/icons.svg#mobile-menu"></use>
+            </svg>
+          </div>
+          <!-- <button class="nav__toggle" aria-label="Toggle navigation">☰</button> -->
+        </div>
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">Features</a>
@@ -619,13 +627,10 @@
           <a class="footer__link" href="#">Pricing</a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
+          <a class="footer__link" href="#">Policy</a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
+          <a class="footer__link" href="#">Contact</a>
         </li>
       </ul>
       <img src="img/icon.png" alt="Logo" class="footer__logo" />

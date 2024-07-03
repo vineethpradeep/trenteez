@@ -6,6 +6,16 @@ const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const header = document.querySelector(".header");
 const btnScrollTo = document.querySelector(".btn--scroll-to");
 const section1 = document.querySelector("#section--1");
+const mobileNnav = document.querySelector(".mobile_nav_container");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.querySelector(".nav__toggle");
+  const navLinks = document.querySelector(".nav__links");
+
+  toggleButton.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+});
 
 const openModal = function (e) {
   e.preventDefault();
